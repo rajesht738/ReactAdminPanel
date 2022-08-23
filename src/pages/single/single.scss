@@ -1,0 +1,72 @@
+.single{
+    display: flex;
+    width: 100%;
+
+    .singleContainer{
+        flex:6;
+
+        .top{
+            padding: 20px;
+            display: flex;
+            gap: 10px;
+          .left{
+            flex:1;
+            -webkit-box-shadow: -1px 0px 14px 9px rgba(212,210,212,1);
+            -moz-box-shadow: -1px 0px 14px 9px rgba(212,210,212,1);
+             box-shadow: -1px 0px 14px 9px rgba(212,210,212,1);
+             padding: 20px;
+             position: relative;
+             .title{
+                font-size: 16px;
+                color: rgb(180, 174, 174);
+                padding-bottom: 20px;
+             }
+             .editButton{
+                position: absolute;
+                top:0;
+                right: 0;
+                padding: 5px;
+                font-size: 12px;
+                color: rgba(0, 0, 255, 0.911);
+                background-color: rgba(0, 0, 255, 0.226);
+                cursor: pointer;
+                border-radius: 0 0 0 5px;
+
+             }
+               .item{
+                display: flex;
+                justify-content: space-around;
+                .itmeImg{
+                    height: 100px;
+                    width: 100px;
+                    border-radius: 50%;
+                    object-fit: cover;
+                }
+                .details{
+                    .itemTitle{
+                        margin-bottom: 10px;
+                        color: rgb(133, 131, 131);
+                    }
+
+                    .itemDetails{
+                        margin-bottom: 5px;
+                        color: rgb(146, 142, 142);
+                        .itemKey{
+                            font-weight: bold;
+                            color: gray;
+                            margin-right: 5px;
+                        }
+                        .itemValue{
+                            font-weight: 300;
+                        }
+                    }
+                }
+            }
+          }
+          .right{
+            flex: 2;
+          }
+        }
+    }
+
+}

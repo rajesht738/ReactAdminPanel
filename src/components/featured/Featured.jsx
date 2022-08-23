@@ -4,8 +4,9 @@ import { CircularProgressbar } from 'react-circular-progressbar';
 import 'react-circular-progressbar/dist/styles.css';
 import MoreVertIcon from '@mui/icons-material/MoreVert';
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
+import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
 const Featured = () => {
-    const value = 0.66;
+   
     return (
         <div className='featured'>
             <div className="top">
@@ -23,7 +24,7 @@ const Featured = () => {
                 <div className="summary">
                     <div className="item">
                         <div className="itemTitle">Target</div>
-                        <div className="itemResult">
+                        <div className="itemResult negative">
                         <KeyboardArrowDownIcon />
                          <div className="resultAmount">
                                 $20K
@@ -31,18 +32,19 @@ const Featured = () => {
                         </div>
                     </div>
                     <div className="item">
-                        <div className="itemTitle">Target</div>
-                        <div className="itemResult">
-                        <KeyboardArrowDownIcon />
+                        <div className="itemTitle">Last Week</div>
+                        <div className="itemResult positive">
+                       
+                        <KeyboardArrowUpIcon/>
                          <div className="resultAmount">
                                 $20K
                             </div>
                         </div>
                     </div>
                     <div className="item">
-                        <div className="itemTitle">Target</div>
-                        <div className="itemResult">
-                        <KeyboardArrowDownIcon />
+                        <div className="itemTitle">Last Month</div>
+                        <div className="itemResult positive">
+                        <KeyboardArrowUpIcon />
                          <div className="resultAmount">
                                 $20K
                             </div>
